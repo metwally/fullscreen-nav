@@ -1,0 +1,88 @@
+.lin-nav-header {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+}
+
+.lin-nav-btn {
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    height: 30px;
+    text-decoration: none;
+}
+
+.lin-nav-btn span {
+    align-self: center;
+    font-family: Arial, sans-serif;
+}
+
+.lin-nav-btn-open{
+    background: #0099cc;
+    color: azure;
+    z-index:999;
+}
+
+.lin-nav-btn-close{
+    color: azure;
+    align-self: center;
+}
+
+.lin-nav-text-xlarge{
+    font-size: 20pt;
+}
+
+.lin-nav-container{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    flex-direction: column;
+    top: 0px;
+    left: 0px;
+
+    height: 100%;
+    width: 100%;
+    background-color: #0099cc;
+    color: azure;
+
+    z-index: 0;
+}
+
+.lin-nav-menu{
+    align-self: center;
+    margin: 0;
+    padding: 0;
+}
+
+.lin-nav-menu li{
+
+    list-style-type: none;
+    margin: 10px;
+}
+
+.lin-nav-menu li a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #00AADD;
+    color: azure;
+    width: 180px;
+    height: 40px;
+
+}
+
+.lin-nav-menu li a span{
+    align-self: center;
+}
+
+
+
+
+/*Transitions*/
+
+.lin-nav-container{
+    transition: transform 1s ease;
+}
+.translate-negative{
+    transform: translateX(-100%);
+}
